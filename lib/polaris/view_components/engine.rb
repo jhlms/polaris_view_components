@@ -10,7 +10,7 @@ module Polaris
     class Engine < ::Rails::Engine
       isolate_namespace Polaris::ViewComponents
 
-      config.autoload_paths = %W[
+      config.autoload_once_paths = %W[
         #{root}/app/components
         #{root}/app/helpers
       ]
